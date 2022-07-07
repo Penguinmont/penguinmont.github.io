@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Login Design </title>
+	<style>
+		html {
+		height: 100%;
+		}
+		body {
+		background-image: linear-gradient(45deg, #FFFFFF, rgb(255, 122, 89));
+		}
+
+		.center {
+		margin: auto;
+		width: 60%;
+		border: 3px solid #1efce3;
+		padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center">
+	<img 
+	src="https://www.publicdomainpictures.net/pictures/270000/velka/career-hiringjob-search-boss-em.jpg" 
+	style="height: 150px"
+	alt="Make a personal site">
+	
+    <h1 allign="center">User Login in</h1>
+	<p  style="background-color: #2ae0af"><front color="red">Please fill in the necessary information</front>
+	<form name="frmUserReg" method="POST" action="" >
+		<p>Please enter your username:
+		<input type="text" name="txtUserId" size="15">
+		<p>Please enter your password:
+		    <input type="password" name="txtPwd" size="8" maxlength="8">*(Password cannot exceed 8 digits)
+	
+		<p>Please enter your password:
+		<input type="password" name="txtPwd2" size="8" maxlength="8">
+		<p>Please enter your name:
+		<input type="text" name="txtUserName" size="15">
+		<p>Please select your gender:
+		<input type="Radio" name="rdoSex" value="male" checked >Male
+		<input type="Radio" name="rdoSex" value="female">Female
+        <input type="Radio" name="rdoSex" value="Other">Other
+		<p>Please enter your birthday:
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit" value="Submit form">
+		<p>Please select your highest degree:
+		<select size="1" name="sltEducation">
+			<option value="High school" >High school</option>
+			<option value="Bachelor's degree" selected>Undergraduate degree</option>
+			<option value="Master">Master's degree</option>
+			<option value="PhD">PhD</option>
+            <option value="Other">Other</option>
+		</select>
+	
+	<fieldset class="c-group">	
+		<legend>Please select the programming language you are interested in:</legend>
+  
+		<div class="group__item">
+			 <input id="m1" type="checkbox">
+			<label for="m1">Html/JavaScript</label>
+		</div>
+  
+		<div class="group__item">
+			 <input id="m2" type="checkbox">
+			<label for="m2">C++</label>
+		</div>
+  
+		<div class="group__item">
+			<input id="m3" type="checkbox">
+			<label for="m3">Java</label>
+		</div>
+
+		<div class="group__item">
+			<input id="m4" type="checkbox">
+		   <label for="m4">Python</label>
+	   </div>
+ 
+	   <div class="group__item">
+		   <input id="m5" type="checkbox">
+		   <label for="m5">Rust</label>
+	   </div>
+	</fieldset>	
+
+
+		<p id="output">Website evaluation score</p>
+		<input type="range" id="score" min="0" max="100" step="1" onchange="b.value=this.value"/>
+		<output id="b" for="score" ></output> 
+
+		<p>Any comments you'd like to share?
+		<textarea name="txtMemo" rows="5" cols="80"></textarea>
+		<p allign="center"><input type="submit" name="btnSubmit" value="Submit" onclick="window.alert('Submitted successfully!')">
+		<input type="reset" name="btnReset" value="Cancel" onclick="window.alert('Canceled')">
+	</form>
+
+
+	<script>
+		b.value = "Move the bar left or right";
+	</script>
+
+	<script type="text/javascript">var OriginTitile = document.title;
+	var titleTime;
+	document.addEventListener('visibilitychange',
+		function() {
+			if (document.hidden) {
+				document.title = 'Enjoy surfing~' ;
+				clearTimeout(titleTime);
+			} else {
+				document.title = 'Welcome~ ' ;
+				titleTime = setTimeout(function() {
+						document.title = OriginTitile;
+					},
+					2000);
+			}
+		});
+	</script>
+	</div>
+</body>
+</html>
